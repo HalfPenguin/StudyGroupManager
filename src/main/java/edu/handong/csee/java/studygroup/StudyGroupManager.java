@@ -5,13 +5,10 @@ import edu.handong.csee.java.studygroup.analyzers.StatisticsManager;
 import edu.handong.csee.java.studygroup.datamodel.Student;
 import edu.handong.csee.java.studygroup.datamodel.StudyGroup;
 import edu.handong.csee.java.studygroup.exceptions.NoCourseNameFoundException;
-import edu.handong.csee.java.studygroup.exceptions.ZipFileProcessingException;
 import edu.handong.csee.java.studygroup.fileio.FileUtils;
-import edu.handong.csee.java.studygroup.fileio.ZipFileHandler;
 import edu.handong.csee.java.studygroup.cli.OptionHandler;
 import org.apache.commons.cli.Options;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -51,27 +48,6 @@ public class StudyGroupManager {
             // Read the input file
             String filePath = myOptionHandler.getDataFilePath();
             System.out.println("Loading the data file: " + filePath + "...");
-
-            // Check if the input is a ZIP file
-            boolean isZipFile = filePath.toLowerCase().endsWith(".zip");
-            if (isZipFile) {
-                System.out.println("ZIP file detected. Listing CSV files inside ZIP:");
-                try {
-                    ArrayList<String> csvFiles = ZipFileHandler.listCSVFilesInZip(filePath);
-
-                    if (csvFiles.isEmpty()) {
-                        System.err.println("Error: No CSV files found in the ZIP archive.");
-                        return;
-                    }
-
-                    for (String csvFile : csvFiles) {
-                        System.out.println(" - " + csvFile);
-                    }
-                } catch (ZipFileProcessingException e) {
-                    System.err.println(e.getMessage());
-                    return;
-                }
-            }
 
             String[] fieldNames = {"Group", "MemberID", "MemberName", "Friends", "Subjects", "Reports", "Times"};
             ArrayList<ArrayList<String>> records = FileUtils.readCSVFile(filePath, fieldNames);

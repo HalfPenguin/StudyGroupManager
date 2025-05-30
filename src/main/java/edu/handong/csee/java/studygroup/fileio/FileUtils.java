@@ -1,13 +1,12 @@
 package edu.handong.csee.java.studygroup.fileio;
 
 import edu.handong.csee.java.studygroup.datamodel.StudyGroup;
-import edu.handong.csee.java.studygroup.exceptions.ZipFileProcessingException;
 import org.apache.commons.csv.*;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Map;
+
 
 /**
  * Utility class for file input/output operations.
@@ -24,12 +23,7 @@ public class FileUtils {
      * @return A list of lists of strings representing the data, or an empty list if an error occurs.
      */
     public static ArrayList<ArrayList<String>> readCSVFile(String path, String[] header) {
-        // Check if it's a ZIP file or a regular CSV file and process accordingly
-        if (path.toLowerCase().endsWith(".zip")) {
-            return processZipFile(path, header);  // Process ZIP file
-        } else {
             return processCSVFile(path, header);  // Process regular CSV file
-        }
     }
 
     /**
@@ -58,40 +52,7 @@ public class FileUtils {
 
         return data;
     }
-
-    /**
-     * Processes a ZIP file and extracts data from all CSV files within it.
-     *
-     * @param zipPath The path to the ZIP file.
-     * @param header  The header row of the CSV files.
-     * @return A list of lists of strings representing the combined data from all CSV files,
-     * or an empty list if an error occurs.
-     */
-    private static ArrayList<ArrayList<String>> processZipFile(String zipPath, String[] header) {
-        ArrayList<ArrayList<String>> combinedData = new ArrayList<>();
-
-        System.out.println("Processing ZIP file: " + zipPath);
-        try {
-            // Read CSV files from the ZIP archive
-            Map<String, ArrayList<ArrayList<String>>> fileDataMap = ZipFileHandler.readCSVFilesFromZip(zipPath, header);
-
-            // Print the names of CSV files found in the ZIP
-            System.out.println("CSV files found in ZIP:");
-            for (String fileName : fileDataMap.keySet()) {
-                System.out.println(" - " + fileName);
-            }
-
-            // Combine the data from all CSV files inside the ZIP archive
-            for (ArrayList<ArrayList<String>> fileData : fileDataMap.values()) {
-                combinedData.addAll(fileData);
-            }
-
-        } catch (ZipFileProcessingException e) {
-            System.err.println("Error processing ZIP file: " + e.getMessage());
-        }
-
-        return combinedData;
-    }
+    
 
     /**
      * Parses CSV content from a Reader and returns the data as a list of lists of strings.
@@ -137,7 +98,7 @@ public class FileUtils {
         String oDirectory = "output";
         File directory = new File(oDirectory);
         if (!directory.exists()) {
-            directory.mkdirs();
+            boolean mkdirs = directory.mkdirs();
         }
 
         String baseFileName;
