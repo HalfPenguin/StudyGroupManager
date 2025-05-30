@@ -1,0 +1,163 @@
+Group,MemberID,MemberName,Friends,Subjects,Reports,Times
+1,2,Robert Williams,"Richard Davis, Daniel Anderson","컴퓨터구조, 실전프로젝트1, Computer Vision",18,3656
+1,89,Daniel Anderson,"Robert Williams, Richard Davis","컴퓨터구조, 실전프로젝트1, Computer Vision",18,3656
+1,90,George Harris,,,18,3656
+1,91,Richard Davis,"Robert Williams, Daniel Anderson","컴퓨터구조, 실전프로젝트1",18,3656
+1,198,William Jones,,"컴퓨터구조, 실전프로젝트1",18,3656
+49,65,Edward Martinez,,"Computer Architecture and Organization, Discrete Mathematics",15,3230
+49,67,Steven Thompson,"Brian Robinson, Charles Wilson, Brian Robinson",Computer Architecture and Organization,15,3230
+49,69,Charles Wilson,"Brian Robinson, Brian Robinson, Steven Thompson",Computer Architecture and Organization,15,3230
+49,70,Brian Robinson,"Charles Wilson, Steven Thompson, Brian Robinson",Computer Architecture and Organization,15,3230
+49,76,Brian Robinson,"Brian Robinson, Steven Thompson, Charles Wilson",Computer Architecture and Organization,15,3230
+12,24,Paul Thomas,,컴퓨터구조,12,1895
+12,56,David Miller,,"컴퓨터구조, 전자기학, 신호 및 시스템",12,1895
+12,179,Joseph Garcia,,"컴퓨터구조, Discrete Mathematics, 데이타구조",12,1895
+12,190,Christopher Taylor,,컴퓨터구조,12,1895
+27,92,William Jones,"Charles Wilson, Donald White, Kenneth Martin","Computer Vision, Computer Architecture and Organization, Discrete Mathematics",12,1783
+27,97,Donald White,"Charles Wilson, William Jones, Kenneth Martin","Discrete Mathematics, 컴퓨터구조, Computer Vision",12,1783
+27,98,Kenneth Martin,"Donald White, William Jones, Charles Wilson","Discrete Mathematics, 컴퓨터구조",12,1783
+27,99,Charles Wilson,"William Jones, Donald White, Kenneth Martin","Computer Architecture and Organization, Discrete Mathematics, Computer Vision",12,1783
+26,88,Edward Martinez,Paul Thomas,"Discrete Mathematics, Computer Architecture and Organization, 실전프로젝트1",12,1354
+26,96,Charles Wilson,,"컴퓨터구조, Discrete Mathematics, Computer Vision",12,1354
+26,149,Paul Thomas,Edward Martinez,"Discrete Mathematics, 컴퓨터구조, 실전프로젝트1",12,1354
+34,139,James Smith,"Steven Thompson, Edward Martinez, Joseph Garcia","실전프로젝트1, Computer Architecture and Organization, Computer Vision",11,2552
+34,144,James Smith,Steven Thompson,"Computer Vision, Programming Language Theory, Discrete Mathematics",11,2552
+34,156,Edward Martinez,"Joseph Garcia, James Smith, Steven Thompson","Computer Architecture and Organization, 실전프로젝트1, Computer Vision",11,2552
+34,157,Steven Thompson,"Edward Martinez, James Smith, James Smith","Computer Vision, 실전프로젝트1, 웹 서비스 개발",11,2552
+34,167,John Johnson,,,11,2552
+34,168,Joseph Garcia,"Edward Martinez, James Smith",Computer Vision,11,2552
+17,41,Joseph Garcia,"John Johnson, Mark Jackson","컴퓨터네트워크, C 프로그래밍(전산전자)",11,2060
+17,81,Mark Jackson,"Joseph Garcia, John Johnson","데이타구조, 컴퓨터네트워크, C 프로그래밍(전산전자)",11,2060
+17,87,John Johnson,"Joseph Garcia, Mark Jackson",컴퓨터네트워크,11,2060
+13,26,Daniel Anderson,,"Discrete Mathematics, Computer Vision, 컴퓨터구조",11,1169
+13,28,John Johnson,,"Discrete Mathematics, 컴퓨터구조",11,1169
+13,184,Kenneth Martin,,Discrete Mathematics,11,1169
+7,17,James Smith,James Smith,컴퓨터구조,11,1120
+7,21,Christopher Taylor,David Miller,"컴퓨터구조, Discrete Mathematics, 데이타구조",11,1120
+7,64,David Miller,Christopher Taylor,"컴퓨터구조, Discrete Mathematics, Computer Vision",11,1120
+7,178,James Smith,James Smith,컴퓨터구조,11,1120
+45,15,Donald White,,"자바프로그래밍언어, Discrete Mathematics, 데이타구조",11,990
+45,16,William Jones,,"자바프로그래밍언어, 데이타구조",11,990
+45,82,Daniel Anderson,,데이타구조,11,990
+45,126,Kenneth Martin,,"데이타구조, 실전프로젝트1",11,990
+5,9,Donald White,John Johnson,컴퓨터구조,11,773
+5,11,Kenneth Martin,"Daniel Anderson, Michael Brown",컴퓨터구조,11,773
+5,37,Daniel Anderson,Kenneth Martin,컴퓨터구조,11,773
+5,79,Michael Brown,Kenneth Martin,컴퓨터구조,11,773
+5,148,John Johnson,Donald White,컴퓨터구조,11,773
+33,128,Joseph Garcia,"Brian Robinson, David Miller",컴퓨터구조,11,694
+33,129,David Miller,"Joseph Garcia, Brian Robinson",컴퓨터구조,11,694
+33,131,Brian Robinson,"Joseph Garcia, David Miller",컴퓨터구조,11,694
+36,151,Christopher Taylor,"George Harris, Robert Williams",컴퓨터네트워크,11,675
+36,159,George Harris,"Robert Williams, Christopher Taylor",컴퓨터네트워크,11,675
+36,163,Christopher Taylor,William Jones,"컴퓨터네트워크, 웹 서비스 개발",11,675
+36,166,Robert Williams,"George Harris, Christopher Taylor",컴퓨터네트워크,11,675
+36,177,William Jones,Christopher Taylor,컴퓨터네트워크,11,675
+6,12,Mark Jackson,"Steven Thompson, Joseph Garcia","실전프로젝트1, Discrete Mathematics",10,2300
+6,14,Joseph Garcia,"Mark Jackson, Steven Thompson","실전프로젝트1, Discrete Mathematics, 컴퓨터구조",10,2300
+6,71,Steven Thompson,"Joseph Garcia, Mark Jackson","실전프로젝트1, Discrete Mathematics",10,2300
+30,118,Brian Robinson,"Steven Thompson, Charles Wilson",신호 및 시스템,10,1915
+30,120,Charles Wilson,"Steven Thompson, Brian Robinson",신호 및 시스템,10,1915
+30,165,Steven Thompson,"Brian Robinson, Charles Wilson",신호 및 시스템,10,1915
+29,112,James Smith,"Edward Martinez, George Harris",Computer Vision,10,1183
+29,133,George Harris,"James Smith, Edward Martinez",Computer Vision,10,1183
+29,134,Edward Martinez,"George Harris, James Smith",Computer Vision,10,1183
+29,141,John Johnson,,"Computer Vision, Computer Architecture and Organization, 실전프로젝트1",10,1183
+25,73,Brian Robinson,"Robert Williams, Edward Martinez, George Harris",Discrete Mathematics,10,1089
+25,74,Robert Williams,"Edward Martinez, George Harris, Brian Robinson",Discrete Mathematics,10,1089
+25,77,Edward Martinez,"George Harris, Brian Robinson, Robert Williams",Discrete Mathematics,10,1089
+25,78,George Harris,"Brian Robinson, Edward Martinez, Robert Williams",Discrete Mathematics,10,1089
+2,7,Daniel Anderson,,컴퓨터구조,10,749
+2,80,Joseph Garcia,,"컴퓨터구조, 실전프로젝트1",10,749
+2,138,Richard Davis,,"컴퓨터구조, Discrete Mathematics",10,749
+2,140,Brian Robinson,,"컴퓨터구조, Discrete Mathematics",10,749
+2,164,Kenneth Martin,,"컴퓨터구조, Discrete Mathematics",10,749
+28,93,Brian Robinson,"Michael Brown, Christopher Taylor","실전프로젝트1, Discrete Mathematics",10,725
+28,108,Michael Brown,"Brian Robinson, Christopher Taylor","실전프로젝트1, Discrete Mathematics",10,725
+28,119,Christopher Taylor,"Michael Brown, Brian Robinson",실전프로젝트1,10,725
+4,10,Daniel Anderson,,"Computer Architecture and Organization, Discrete Mathematics, 신호 및 시스템",10,605
+4,57,Daniel Anderson,,"Computer Architecture and Organization, Discrete Mathematics, 자바프로그래밍언어",10,605
+4,111,Donald White,,Computer Architecture and Organization,10,605
+4,124,William Jones,,Computer Architecture and Organization,10,605
+15,31,Steven Thompson,,"컴퓨터구조, Discrete Mathematics",9,620
+15,63,Brian Robinson,,"확률변수론, 지능로봇제어, 컴퓨터구조",9,620
+15,110,Michael Brown,,"컴퓨터구조, Discrete Mathematics",9,620
+15,158,Brian Robinson,,컴퓨터구조,9,620
+32,115,Steven Thompson,,컴퓨터네트워크,9,570
+32,125,Richard Davis,"Michael Brown, Daniel Anderson",컴퓨터네트워크,9,570
+32,135,Michael Brown,"Richard Davis, Daniel Anderson",컴퓨터네트워크,9,570
+32,136,Daniel Anderson,"Richard Davis, Michael Brown",컴퓨터네트워크,9,570
+22,51,David Miller,"Brian Robinson, Thomas Moore, Michael Brown",컴퓨터네트워크,7,600
+22,122,Michael Brown,"Brian Robinson, Thomas Moore, David Miller",컴퓨터네트워크,7,600
+22,123,Thomas Moore,"Brian Robinson, David Miller, Michael Brown",컴퓨터네트워크,7,600
+22,137,Brian Robinson,"Michael Brown, David Miller, Thomas Moore",컴퓨터네트워크,7,600
+18,34,James Smith,,Machine Learning,7,420
+18,44,Paul Thomas,"James Smith, John Johnson, Michael Brown","Machine Learning, 컴퓨터네트워크, IoT 시스템 설계",7,420
+18,105,James Smith,"Paul Thomas, Michael Brown, John Johnson",Machine Learning,7,420
+18,116,Michael Brown,"James Smith, John Johnson, Paul Thomas",Machine Learning,7,420
+18,117,John Johnson,"James Smith, Paul Thomas, Michael Brown","Machine Learning, 컴퓨터네트워크",7,420
+38,171,Daniel Anderson,"Charles Wilson, Mark Jackson, George Harris, James Smith",컴퓨터네트워크,7,418
+38,172,Charles Wilson,"James Smith, Daniel Anderson, Mark Jackson, George Harris",컴퓨터네트워크,7,418
+38,173,James Smith,"Charles Wilson, Mark Jackson, Daniel Anderson, George Harris","컴퓨터네트워크, Machine Learning, 웹 서비스 개발",7,418
+38,174,Mark Jackson,"Charles Wilson, George Harris, Daniel Anderson, James Smith",컴퓨터네트워크,7,418
+38,175,George Harris,"Charles Wilson, James Smith, Mark Jackson, Daniel Anderson",컴퓨터네트워크,7,418
+19,47,Donald White,"Kenneth Martin, David Miller",컴퓨터네트워크,6,780
+19,66,Kenneth Martin,"Donald White, David Miller",컴퓨터네트워크,6,780
+19,68,David Miller,"Kenneth Martin, Donald White",컴퓨터네트워크,6,780
+19,127,Steven Thompson,,컴퓨터네트워크,6,780
+31,121,Donald White,"Daniel Anderson, Brian Robinson",컴퓨터보안,6,659
+31,152,Daniel Anderson,"Brian Robinson, Donald White",컴퓨터보안,6,659
+31,153,Brian Robinson,"Daniel Anderson, Donald White","컴퓨터보안, Programming Language Theory",6,659
+8,19,Joseph Garcia,,"실전프로젝트1, 컴퓨터구조, Discrete Mathematics",3,185
+8,49,David Miller,,"실전프로젝트1, 컴퓨터구조, 공학설계입문",3,185
+8,54,Charles Wilson,Daniel Anderson,실전프로젝트1,3,185
+8,55,Daniel Anderson,Charles Wilson,실전프로젝트1,3,185
+8,132,Mark Jackson,,실전프로젝트1,3,185
+9,20,Paul Thomas,"Kenneth Martin, George Harris","컴퓨터네트워크, 웹 서비스 개발",3,180
+9,95,Kenneth Martin,"George Harris, Paul Thomas","컴퓨터네트워크, 웹 서비스 개발",3,180
+9,101,Michael Brown,,컴퓨터네트워크,3,180
+9,146,George Harris,"Kenneth Martin, Paul Thomas",컴퓨터네트워크,3,180
+9,147,Charles Wilson,,"컴퓨터네트워크, Discrete Mathematics",3,180
+14,30,Charles Wilson,"Edward Martinez, James Smith, Richard Davis",실전프로젝트1,2,240
+14,32,James Smith,"Charles Wilson, Richard Davis, Edward Martinez",실전프로젝트1,2,240
+14,33,Richard Davis,"Charles Wilson, James Smith, Edward Martinez",실전프로젝트1,2,240
+14,52,Edward Martinez,"Charles Wilson, James Smith, Richard Davis",실전프로젝트1,2,240
+50,40,Daniel Anderson,"Charles Wilson, Christopher Taylor",디지털시스템설계,2,120
+50,192,Charles Wilson,"Christopher Taylor, Daniel Anderson",디지털시스템설계,2,120
+50,195,Christopher Taylor,"Daniel Anderson, Charles Wilson",디지털시스템설계,2,120
+39,176,Brian Robinson,Thomas Moore,컴퓨터구조,1,185
+39,180,Thomas Moore,"Brian Robinson, David Miller",컴퓨터구조,1,185
+39,181,David Miller,Thomas Moore,컴퓨터구조,1,185
+35,143,Robert Williams,"Brian Robinson, Daniel Anderson",IoT 시스템 설계,1,120
+35,154,Brian Robinson,"Robert Williams, Daniel Anderson",IoT 시스템 설계,1,120
+35,155,Daniel Anderson,"Robert Williams, Brian Robinson",IoT 시스템 설계,1,120
+51,1,Edward Martinez,,,1,2
+51,5,Charles Wilson,,,1,2
+46,43,James Smith,,"Programming Language Theory, 컴퓨터네트워크",0,0
+46,45,Robert Williams,,"Programming Language Theory, 컴퓨터네트워크, IoT 시스템 설계",0,0
+11,22,Christopher Taylor,"Steven Thompson, Edward Martinez","전자기학, 신호 및 시스템, 컴퓨터구조",0,0
+11,27,Steven Thompson,"Christopher Taylor, Edward Martinez","전자기학, 신호 및 시스템, 컴퓨터구조",0,0
+11,38,Edward Martinez,"Christopher Taylor, Steven Thompson","전자기학, 신호 및 시스템",0,0
+20,48,Donald White,"Robert Williams, Thomas Moore",Discrete Mathematics,0,0
+20,107,Thomas Moore,"Robert Williams, Donald White","Discrete Mathematics, 컴퓨터구조, Computer Vision",0,0
+20,114,Robert Williams,"Thomas Moore, Donald White",Discrete Mathematics,0,0
+21,50,Charles Wilson,"James Smith, David Miller, Christopher Taylor, Brian Robinson",Machine Learning,0,0
+21,160,David Miller,"James Smith, Brian Robinson, Charles Wilson, Christopher Taylor","컴퓨터네트워크, Machine Learning",0,0
+21,161,Brian Robinson,"Charles Wilson, David Miller, Christopher Taylor",컴퓨터네트워크,0,0
+21,162,Christopher Taylor,"David Miller, Brian Robinson, Charles Wilson",Machine Learning,0,0
+21,170,James Smith,"Charles Wilson, David Miller",Machine Learning,0,0
+47,46,James Smith,,"신호 및 시스템, 전자회로2, 디지털시스템설계",0,0
+47,109,Brian Robinson,,"전자회로2, 디지털시스템설계, 전자기학",0,0
+47,185,Donald White,,"전자회로2, 집적회로설계",0,0
+47,194,Kenneth Martin,,전자회로2,0,0
+47,197,Robert Williams,,"전자회로2, 회로설계 및 제작, 확률변수론",0,0
+24,58,Donald White,"George Harris, George Harris, Charles Wilson",Discrete Mathematics,0,0
+24,59,George Harris,"Donald White, George Harris, Charles Wilson",Discrete Mathematics,0,0
+24,60,George Harris,"Donald White, Charles Wilson, George Harris",Discrete Mathematics,0,0
+24,61,Charles Wilson,"Donald White, George Harris, George Harris",Discrete Mathematics,0,0
+16,36,William Jones,,컴퓨터네트워크,0,0
+16,39,Daniel Anderson,,"컴퓨터네트워크, Programming Language Theory",0,0
+16,169,Daniel Anderson,,"컴퓨터네트워크, Machine Learning, 확률변수론",0,0
+16,193,Christopher Taylor,,컴퓨터네트워크,0,0
+48,42,Charles Wilson,,"전자기학, 신호 및 시스템, 디지털시스템설계",0,0
+48,106,Paul Thomas,,"전자기학, 신호 및 시스템, 컴퓨터구조",0,0
