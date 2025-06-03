@@ -2,6 +2,7 @@ package edu.handong.csee.java.studygroup.datamodel;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Objects;
 
 /**
  * Represents a study group containing multiple students.
