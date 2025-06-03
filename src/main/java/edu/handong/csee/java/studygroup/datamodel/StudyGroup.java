@@ -106,11 +106,7 @@ public class StudyGroup {
         ArrayList<String> orderedNames1 = orderedNames;
         for (Integer id : memberIDs) {
             String name = memberMap.get(id);
-            if (name != null) {
-                orderedNames.add(name);
-            } else {
-                orderedNames.add("Unknown");
-            }
+            orderedNames1.add(Objects.requireNonNullElse(name, "Unknown"));
         }
         return orderedNames;
     }
