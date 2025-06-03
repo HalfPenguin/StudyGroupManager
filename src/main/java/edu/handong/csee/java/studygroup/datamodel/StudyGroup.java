@@ -103,6 +103,7 @@ public class StudyGroup {
     public ArrayList<String> getMemberNames() {
         // Ensure the list is in the same order as member IDs
         ArrayList<String> orderedNames = new ArrayList<>();
+        ArrayList<String> orderedNames1 = orderedNames;
         for (Integer id : memberIDs) {
             String name = memberMap.get(id);
             if (name != null) {
