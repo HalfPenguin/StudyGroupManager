@@ -109,7 +109,7 @@ public class StudyGroup {
             String name = memberMap.get(id);
             orderedNames1.add(Objects.requireNonNullElse(name, "Unknown"));
         }
-        return orderedNames;
+        return orderedNames1;
     }
 
     /**
