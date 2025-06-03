@@ -98,7 +98,7 @@ public class FileUtils {
         String oDirectory = "output";
         File directory = new File(oDirectory);
         if (!directory.exists()) {
-            boolean mkdirs = directory.mkdirs();
+            boolean mkdir = directory.mkdirs();
         }
 
         String baseFileName;
