@@ -126,7 +126,7 @@ public class StudyGroupManager {
         ArrayList<Student> students = new ArrayList<>();
 
         for (ArrayList<String> record : records) {
-            // CSV columns: 0:Group, 1:MemberID, 2:MemberName, 3:Friends, 4:Subjects, 5:Reports, 6:Times
+            // CSV columns: 0:Group, 1:MemberID, 2:MemberName, 4:Subjects, 5:Reports, 6:Times
             Student student = new Student(record.get(0),   // Group
                     record.get(1),   // MemberID
                     record.get(2),   // MemberName

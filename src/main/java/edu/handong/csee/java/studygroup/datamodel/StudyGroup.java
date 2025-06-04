@@ -120,17 +120,12 @@ public class StudyGroup {
      * @param memberName The corresponding member name
      */
     public void addMember(int memberID, String memberName) {
-        if (!this.memberIDs.contains(memberID)) {
+        if (!this.memberIDs.contains(memberID) || !this.memberNames.contains(memberName)) {
             this.memberIDs.add(memberID);
         }
 
         // Update the map
         memberMap.put(memberID, memberName);
-
-        // Only add the name if it's not already in the list
-        if (!this.memberNames.contains(memberName)) {
-            this.memberNames.add(memberName);
-        }
     }
 
     /**
