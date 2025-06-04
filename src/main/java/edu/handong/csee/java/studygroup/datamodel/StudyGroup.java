@@ -9,41 +9,14 @@ import java.util.Objects;
  * This class aggregates information about group members, courses, and study metrics.
  */
 public class StudyGroup {
-    private int groupNumber;
-    private ArrayList<Integer> memberIDs;
-    private ArrayList<String> courseNames;
-    private ArrayList<String> memberNames;
+    private final int groupNumber;
+    private final ArrayList<Integer> memberIDs;
+    private final ArrayList<String> courseNames;
+    private final ArrayList<String> memberNames;
     private int numOfReports;
     private int studyMinutes;
     // Track which names correspond to which IDs
-    private HashMap<Integer, String> memberMap;
-
-    /**
-     * Constructs a new StudyGroup with all properties specified.
-     *
-     * @param groupNumber The group's identifier number
-     * @param memberIDs List of member IDs in the group
-     * @param courseNames List of course names the group studies
-     * @param memberNames List of member names in the group
-     * @param numOfReports Number of reports completed by the group
-     * @param studyMinutes Total study time in minutes
-     */
-    public StudyGroup(int groupNumber, ArrayList<Integer> memberIDs, ArrayList<String> courseNames,
-                      ArrayList<String> memberNames, int numOfReports, int studyMinutes) {
-        this.groupNumber = groupNumber;
-        this.memberIDs = new ArrayList<>(memberIDs);
-        this.courseNames = new ArrayList<>(courseNames);
-        this.memberNames = new ArrayList<>(memberNames);
-        this.numOfReports = numOfReports;
-        this.studyMinutes = studyMinutes;
-        this.memberMap = new HashMap<>();
-
-        // Initialize member map if possible
-        int minSize = Math.min(memberIDs.size(), memberNames.size());
-        for (int i = 0; i < minSize; i++) {
-            this.memberMap.put(memberIDs.get(i), memberNames.get(i));
-        }
-    }
+    private final HashMap<Integer, String> memberMap;
 
     /**
      * Constructs a new, empty StudyGroup with the specified group number.
@@ -70,30 +43,12 @@ public class StudyGroup {
     }
 
     /**
-     * Sets the group number.
-     *
-     * @param groupNumber The new group number
-     */
-    public void setGroupNo(int groupNumber) {
-        this.groupNumber = groupNumber;
-    }
-
-    /**
      * Gets the list of member IDs.
      *
      * @return The list of member IDs
      */
     public ArrayList<Integer> getMemberIDs() {
         return new ArrayList<>(memberIDs);
-    }
-
-    /**
-     * Sets the list of member IDs.
-     *
-     * @param memberIDs The new list of member IDs
-     */
-    public void setMemberIDs(ArrayList<Integer> memberIDs) {
-        this.memberIDs = new ArrayList<>(memberIDs);
     }
 
     /**
@@ -104,21 +59,11 @@ public class StudyGroup {
     public ArrayList<String> getMemberNames() {
         // Ensure the list is in the same order as member IDs
         ArrayList<String> orderedNames = new ArrayList<>();
-        ArrayList<String> orderedNames1 = orderedNames;
         for (Integer id : memberIDs) {
             String name = memberMap.get(id);
-            orderedNames1.add(Objects.requireNonNullElse(name, "Unknown"));
+            orderedNames.add(Objects.requireNonNullElse(name, "Unknown"));
         }
-        return orderedNames1;
-    }
-
-    /**
-     * Sets the list of member names.
-     *
-     * @param memberNames The new list of member names
-     */
-    public void setMemberNames(ArrayList<String> memberNames) {
-        this.memberNames = new ArrayList<>(memberNames);
+        return orderedNames;
     }
 
     /**
@@ -128,15 +73,6 @@ public class StudyGroup {
      */
     public ArrayList<String> getCourseNames() {
         return new ArrayList<>(courseNames);
-    }
-
-    /**
-     * Sets the list of course names.
-     *
-     * @param courseNames The new list of course names
-     */
-    public void setCourseNames(ArrayList<String> courseNames) {
-        this.courseNames = new ArrayList<>(courseNames);
     }
 
     /**
@@ -175,37 +111,6 @@ public class StudyGroup {
      */
     public void setStudyMinutes(int studyMinutes) {
         this.studyMinutes += studyMinutes;
-    }
-
-    /**
-     * Adds a member ID to the group and ensures the corresponding name is tracked.
-     *
-     * @param memberID The member ID to add
-     */
-    public void addMemberID(int memberID) {
-        if (!this.memberIDs.contains(memberID)) {
-            this.memberIDs.add(memberID);
-        }
-    }
-
-    /**
-     * Adds a member name to the group, ensuring it's linked to the corresponding member ID.
-     *
-     * @param memberName The member name to add
-     */
-    public void addMemberName(String memberName) {
-        // Add to the names list if it's not already there
-        if (!this.memberNames.contains(memberName)) {
-            this.memberNames.add(memberName);
-        }
-
-        // Make sure to update the memberMap if we can determine which ID this name belongs to
-        if (memberIDs.size() == memberNames.size()) {
-            int index = memberNames.indexOf(memberName);
-            if (index >= 0 && index < memberIDs.size()) {
-                memberMap.put(memberIDs.get(index), memberName);
-            }
-        }
     }
 
     /**

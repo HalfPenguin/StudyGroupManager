@@ -12,22 +12,14 @@ public class OptionHandler {
     private boolean printHelp;
     private boolean printStatistics;
 
-    /**
-     * Parses command-line arguments according to defined options.
-     *
-     * @param options The Options object containing defined command-line options
-     * @param args The command-line arguments to parse
-     * @return true if parsing was successful, false otherwise
-     */
     public boolean parseOptions(Options options, String[] args) {
         CommandLineParser parser = new DefaultParser();
-        CommandLine cmd = null;
+        CommandLine cmd;
         try {
             cmd = parser.parse(options, args);
 
             if (cmd.hasOption("h")) {
                 printHelp = true;
-                return true;
             }
 
             if (cmd.hasOption("s")) {
@@ -112,30 +104,12 @@ public class OptionHandler {
     }
 
     /**
-     * Sets the course name.
-     *
-     * @param courseName The new course name
-     */
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
-    }
-
-    /**
      * Gets the data file path.
      *
      * @return The data file path
      */
     public String getDataFilePath() {
         return dataFilePath;
-    }
-
-    /**
-     * Sets the data file path.
-     *
-     * @param dataFilePath The new data file path
-     */
-    public void setDataFilePath(String dataFilePath) {
-        this.dataFilePath = dataFilePath;
     }
 
     /**
@@ -148,15 +122,6 @@ public class OptionHandler {
     }
 
     /**
-     * Sets whether help should be printed.
-     *
-     * @param printHelp true to print help, false otherwise
-     */
-    public void setPrintHelp(boolean printHelp) {
-        this.printHelp = printHelp;
-    }
-
-    /**
      * Checks if statistics should be printed.
      *
      * @return true if statistics should be printed, false otherwise
@@ -165,12 +130,4 @@ public class OptionHandler {
         return printStatistics;
     }
 
-    /**
-     * Sets whether statistics should be printed.
-     *
-     * @param printStatistics true to print statistics, false otherwise
-     */
-    public void setPrintStatistics(boolean printStatistics) {
-        this.printStatistics = printStatistics;
-    }
 }

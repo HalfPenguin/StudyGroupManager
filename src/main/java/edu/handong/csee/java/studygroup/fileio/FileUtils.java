@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class FileUtils {
 
     /**
-     * Reads a CSV file or ZIP file containing CSV files and returns the data as a list of lists of strings.
+     * Reads a CSV file and returns the data as a list of lists of strings.
      *
      * @param path   The path to the CSV or ZIP file.
      * @param header The header row of the CSV file.
