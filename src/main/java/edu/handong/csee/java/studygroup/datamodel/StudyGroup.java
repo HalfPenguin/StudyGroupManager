@@ -9,10 +9,36 @@ import java.util.Objects;
  * This class aggregates information about group members, courses, and study metrics.
  */
 public class StudyGroup {
-    private final int groupNumber;
-    private final ArrayList<Integer> memberIDs;
-    private final ArrayList<String> courseNames;
-    private final ArrayList<String> memberNames;
+    private int groupNumber;
+    private ArrayList<Integer> memberIDs;
+
+    public int getGroupNumber() {
+        return groupNumber;
+    }
+
+    public void setGroupNumber(int groupNumber) {
+        this.groupNumber = groupNumber;
+    }
+
+    private ArrayList<String> courseNames;
+
+    public HashMap<Integer, String> getMemberMap() {
+        return memberMap;
+    }
+
+    public void setMemberNames(ArrayList<String> memberNames) {
+        this.memberNames = memberNames;
+    }
+
+    public void setCourseNames(ArrayList<String> courseNames) {
+        this.courseNames = courseNames;
+    }
+
+    public void setMemberIDs(ArrayList<Integer> memberIDs) {
+        this.memberIDs = memberIDs;
+    }
+
+    private ArrayList<String> memberNames;
     private int numOfReports;
     private int studyMinutes;
     // Track which names correspond to which IDs

@@ -8,12 +8,37 @@ import java.util.ArrayList;
  * including group number, ID, name, friends, subjects, reports count, and study time.
  */
 public class Student {
-    private final int group;
-    private final int memberID;
-    private final String memberName;
-    private final ArrayList<String> subjects = new ArrayList<>();
-    private final int reports;
-    private final int times;
+    private int group;
+
+    public void setTimes(int times) {
+        this.times = times;
+    }
+
+    public void setReports(int reports) {
+        this.reports = reports;
+    }
+
+    public void setSubjects(ArrayList<String> subjects) {
+        this.subjects = subjects;
+    }
+
+    public void setMemberName(String memberName) {
+        this.memberName = memberName;
+    }
+
+    public void setMemberID(int memberID) {
+        this.memberID = memberID;
+    }
+
+    public void setGroup(int group) {
+        this.group = group;
+    }
+
+    private int memberID;
+    private String memberName;
+    private ArrayList<String> subjects = new ArrayList<>();
+    private int reports;
+    private int times;
 
     /**
      * Constructs a new Student object with the provided information.

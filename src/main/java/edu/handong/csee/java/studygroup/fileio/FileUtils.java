@@ -110,13 +110,17 @@ public class FileUtils {
 
         String outputFileName = oDirectory + "/" + baseFileName + "-" + courseName + ".csv";
 
-        try (Writer writer = new FileWriter(outputFileName, StandardCharsets.UTF_8);
+        try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(
+                new FileOutputStream(outputFileName), StandardCharsets.UTF_8));
              CSVPrinter printer = new CSVPrinter(writer, CSVFormat.DEFAULT
                      .builder()
                      .setHeader(header.toArray(new String[0]))
                      .build())) {
+            // Your CSV printing logic here
 
-            for (StudyGroup group : groups) {
+
+
+        for (StudyGroup group : groups) {
                 int groupNo = group.getGroupNo();
                 ArrayList<Integer> idList = group.getMemberIDs();
                 ArrayList<String> nameList = group.getMemberNames();

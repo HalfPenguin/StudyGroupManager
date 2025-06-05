@@ -9,12 +9,6 @@ import java.io.Serial;
 public class NoCourseNameFoundException extends Exception {
 
     /**
-     * Serial version UID for serialization compatibility.
-     */
-    @Serial
-    private static final long serialVersionUID = 1L;
-
-    /**
      * Constructor for the NoCourseNameFoundException.
      *
      * @param courseName The course name that was not found.

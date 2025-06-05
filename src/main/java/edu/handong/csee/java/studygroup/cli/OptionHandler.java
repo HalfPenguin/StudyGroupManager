@@ -7,6 +7,22 @@ import org.apache.commons.cli.*;
  * This class defines, parses, and manages the command-line interface.
  */
 public class OptionHandler {
+    public void setPrintStatistics(boolean printStatistics) {
+        this.printStatistics = printStatistics;
+    }
+
+    public void setPrintHelp(boolean printHelp) {
+        this.printHelp = printHelp;
+    }
+
+    public void setCourseName(String courseName) {
+        this.courseName = courseName;
+    }
+
+    public void setDataFilePath(String dataFilePath) {
+        this.dataFilePath = dataFilePath;
+    }
+
     private String dataFilePath;
     private String courseName;
     private boolean printHelp;
